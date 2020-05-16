@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nginx-todo
+    labels:
+        app: nginx
+spec:
+    containers:
+    - name: nginx-container
+      image: karanshreds/nginx_new
+      ports:
+         - containerPort: 8001
